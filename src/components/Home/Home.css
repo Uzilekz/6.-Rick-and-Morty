@@ -1,0 +1,25 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.home img {
+    width: 60%;
+    transition: transform .7s;
+    animation: pulse 3s linear infinite;
+}
+
+.home img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    50% {
+        filter: drop-shadow(1px 1px 15px rgb(0, 230, 77));
+    }
+    100% {
+    }
+}

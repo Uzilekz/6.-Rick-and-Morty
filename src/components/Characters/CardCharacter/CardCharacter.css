@@ -1,0 +1,58 @@
+.card {
+    display: flex;
+    border: 2px solid #101010;
+    background: rgb(20, 20, 20);
+    box-shadow: 1px 1px 5px #101010;
+    border-radius: 5px;
+    width: 450px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px #101010;
+}
+
+.card img {
+    border-radius: 5px 0 0 5px;
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card__description {
+    margin: 0 20px;
+}
+
+.card .card__description p {
+    color: #d6d6d6;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.card .card__description .card__name {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+
+.card .card__description .card__status {
+    font-weight: bold;
+    padding: 0 0 20px 0;
+    display: inline-block;
+}
+
+.card .card__description .card__last-seen{
+    color: rgb(99, 99, 99);
+}
+
+.card .card__description .card__location {
+    margin: 0 0 20px 0;
+}
+
+.card .card__description .card__episode {
+    font-weight: bold;
+}
